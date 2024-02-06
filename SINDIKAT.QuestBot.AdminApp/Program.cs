@@ -1,4 +1,4 @@
-using SINDIKAT.QuestBot.Components;
+using SINDIKAT.QuestBot.AdminApp.Components;
 
 var builder = WebApplication.CreateBuilder(args);
 

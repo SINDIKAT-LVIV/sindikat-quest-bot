@@ -1,6 +1,12 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SINDIKAT.QuestBot", "SINDIKAT.QuestBot\SINDIKAT.QuestBot.csproj", "{CFF47A50-8B18-4B18-9548-30E7F6A1768F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SINDIKAT.QuestBot.API", "SINDIKAT.QuestBot.API\SINDIKAT.QuestBot.API.csproj", "{806735FE-2B9F-400C-8611-D562E883D208}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SINDIKAT.QuestBot.AdminApp", "SINDIKAT.QuestBot.AdminApp\SINDIKAT.QuestBot.AdminApp.csproj", "{54AB9A77-BA57-4DC0-9FF2-3FAF51F661F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SINDIKAT.QuestBot.Client", "SINDIKAT.QuestBot.Client\SINDIKAT.QuestBot.Client.csproj", "{765839D5-9F1A-4BEB-8B2B-92B5AEB2A35D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SINDIKAT.QuestBot.Database", "SINDIKAT.QuestBot.Database\SINDIKAT.QuestBot.Database.csproj", "{F383A0C7-F991-4F48-AF57-C550F380ADD0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -8,9 +14,21 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CFF47A50-8B18-4B18-9548-30E7F6A1768F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CFF47A50-8B18-4B18-9548-30E7F6A1768F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CFF47A50-8B18-4B18-9548-30E7F6A1768F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CFF47A50-8B18-4B18-9548-30E7F6A1768F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{806735FE-2B9F-400C-8611-D562E883D208}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{806735FE-2B9F-400C-8611-D562E883D208}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{806735FE-2B9F-400C-8611-D562E883D208}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{806735FE-2B9F-400C-8611-D562E883D208}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54AB9A77-BA57-4DC0-9FF2-3FAF51F661F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54AB9A77-BA57-4DC0-9FF2-3FAF51F661F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54AB9A77-BA57-4DC0-9FF2-3FAF51F661F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54AB9A77-BA57-4DC0-9FF2-3FAF51F661F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{765839D5-9F1A-4BEB-8B2B-92B5AEB2A35D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{765839D5-9F1A-4BEB-8B2B-92B5AEB2A35D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{765839D5-9F1A-4BEB-8B2B-92B5AEB2A35D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{765839D5-9F1A-4BEB-8B2B-92B5AEB2A35D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F383A0C7-F991-4F48-AF57-C550F380ADD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F383A0C7-F991-4F48-AF57-C550F380ADD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F383A0C7-F991-4F48-AF57-C550F380ADD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F383A0C7-F991-4F48-AF57-C550F380ADD0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
