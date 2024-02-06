@@ -37,10 +37,9 @@ public sealed class TeamQuestStepConfiguration : IEntityTypeConfiguration<TeamQu
             .WithMany()
             .HasForeignKey(Indentifiers.QuestStep)
             .IsRequired();
-        
+
         builder
-            .HasMany(p => p.TeamQuestHints)
-            .WithOne(p => p.TeamQuestStep)
-            .HasForeignKey(Indentifiers.TeamQuestHint);
+            .HasMany(tqs => tqs.TeamQuestHints)
+            .WithOne(tqh => tqh.TeamQuestStep);
     }
 }

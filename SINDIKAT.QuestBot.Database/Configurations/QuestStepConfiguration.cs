@@ -34,13 +34,13 @@ public sealed class QuestStepConfiguration : IEntityTypeConfiguration<QuestStep>
 
         builder
             .HasOne(p => p.Previous)
-            .WithOne(p => p.Next)
-            .HasForeignKey(Indentifiers.QuestStep);
+            .WithOne()
+            .HasForeignKey<QuestStep>(Indentifiers.PreviousQuestStep);
 
         builder
             .HasOne(p => p.Next)
-            .WithOne(p => p.Previous)
-            .HasForeignKey(Indentifiers.QuestStep);
+            .WithOne()
+            .HasForeignKey<QuestStep>(Indentifiers.NextQuestStep);
 
         builder
             .HasMany(p => p.Hints)
