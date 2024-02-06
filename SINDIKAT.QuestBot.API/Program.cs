@@ -1,7 +1,16 @@
+using SINDIKAT.QuestBot.API;
+using SINDIKAT.QuestBot.Database;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddQuestDb();
+
+builder.Services
+    .Configure<DbConnectionString>(x =>
+        x.Value = builder.Configuration.GetConnectionString(nameof(DbConnectionString)) ??
+                  throw new ArgumentNullException(x.Value, "Server DB connection string is null"));
 
 var app = builder.Build();
 
@@ -35,7 +44,10 @@ app.MapGet("/weatherforecast", () =>
 
 app.Run();
 
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
+namespace SINDIKAT.QuestBot.API
 {
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+    record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
+    {
+        public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+    }
 }
