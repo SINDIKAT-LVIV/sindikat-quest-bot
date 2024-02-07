@@ -10,4 +10,6 @@ public partial class QuestContext
     public DbSet<Quest> Quests { get; set; }
     public DbSet<QuestStep> Steps { get; set; }
     public DbSet<QuestHint> Hints { get; set; }
+    public DbSet<TeamQuestStep> TeamQuestSteps { get; set; }
+    public DbSet<TeamQuestHint> TeamQuestHints { get; set; }
 }

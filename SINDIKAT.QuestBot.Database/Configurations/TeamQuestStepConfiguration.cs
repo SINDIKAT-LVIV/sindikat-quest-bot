@@ -11,7 +11,7 @@ public sealed class TeamQuestStepConfiguration : IEntityTypeConfiguration<TeamQu
     {
         builder
             .ToTable(Tables.TeamQuestStep, Schemas.Dbo)
-            .HasKey(p => p.TeamQuestHints)
+            .HasKey(p => p.Id)
             .HasName(Indentifiers.TeamQuestStep);
 
         builder
@@ -39,7 +39,8 @@ public sealed class TeamQuestStepConfiguration : IEntityTypeConfiguration<TeamQu
             .IsRequired();
 
         builder
-            .HasMany(tqs => tqs.TeamQuestHints)
-            .WithOne(tqh => tqh.TeamQuestStep);
+            .HasMany(p => p.TeamQuestHints)
+            .WithOne(p => p.TeamQuestStep)
+            .HasForeignKey(Indentifiers.TeamQuestHint);
     }
 }
